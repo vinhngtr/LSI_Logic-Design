@@ -1,0 +1,90 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1439 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+CPU time     : 1.06    seconds
+Elapse time  : 216     seconds
+Memory usage : 260.53  M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 1.39    seconds
+Elapse time  : 224     seconds
+Memory usage : 278.15  M bytes
+// Command: read_design boundflasher_lab1.v -verilog -golden
+// Parsing file boundflasher_lab1.v ...
+// Golden root module is set to 'vlsi_lab1'
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:1)
+// Warning: (RTL7.10c) Bit-wise operation with different data sizes (occurrence:5)
+// Warning: (RTL19.1) Identifier is a reserved keyword and might conflict in designs with mixed languages (occurrence:5)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:1)
+// Warning: (IGN1.1) Initial construct is not supported. The entire initial construct will be ignored (occurrence:3)
+// Warning: (HRC3.16) A wire is declared, but not used in the module (occurrence:1)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.50    seconds
+Elapse time  : 244     seconds
+Memory usage : 285.18  M bytes
+// Command: read_design vlsi_lab1_m.v -verilog -revised
+// Parsing file vlsi_lab1_m.v ...
+// Revised root module is set to 'vlsi_lab1'
+// Warning: (RTL19.1) Identifier is a reserved keyword and might conflict in designs with mixed languages (occurrence:3)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.62    seconds
+Elapse time  : 260     seconds
+Memory usage : 290.73  M bytes
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.88    seconds
+Elapse time  : 289     seconds
+Memory usage : 317.94  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     22        41      
+--------------------------------------------------------------------------------
+Revised           3      16     22        41      
+================================================================================
+0
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     22        41      
+--------------------------------------------------------------------------------
+Revised           3      16     22        41      
+================================================================================
+0
+// Command: add_compared_points -all
+// 38 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           16     22        38      
+================================================================================
+0
